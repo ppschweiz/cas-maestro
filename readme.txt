@@ -1,5 +1,5 @@
 === CAS Maestro ===
-Contributors: vaurdan, jpargana, ricardobaeta
+Contributors: vaurdan, jpargana, ricardobaeta, sandrof
 Donate link: https://dsi.tecnico.ulisboa.pt
 Tags: cas, maestro, central, centralized, authentication, auth, service, system, server, phpCAS, integration, ldap
 Requires at least: 3.5
