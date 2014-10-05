@@ -65,6 +65,7 @@ class CAS_Maestro {
  				'cas_menu_location'=>'sidebar',
  				'new_user' => false,
 			    'email_suffix' => '',
+			    'email_attribute' => 'mail',
 			    'cas_version' => "1.0",
 			    'server_hostname' => 'yourschool.edu',
 			    'server_port' => '443',
@@ -284,6 +285,9 @@ class CAS_Maestro {
 							}
 						}
 					}
+					break;
+				case 4:
+					$user_email = phpCAS::getAttribute($this->settings['email_attribute']);
 					break;
 				default: //No email predition
 					break;
@@ -612,6 +616,7 @@ class CAS_Maestro {
 			    	),
 				'new_user' => $_POST['new_user'],
 				'email_suffix' => $_POST['email_suffix'],
+				'email_attribute' => $_POST['email_attribute'],
 				//Global settings
 				'cas_menu_location' => $_POST['admin_menu'],
 			);
